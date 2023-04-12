@@ -80,6 +80,11 @@ public class RelatorioPdfSimples implements Relatorio {
             this.documentoPdf.add(paragraphProduto);
             this.documentoPdf.add(new Paragraph(" --------------------------------- "));
         }
+
+        Paragraph paragraphTotal = new Paragraph();
+        paragraphTotal.setAlignment(Element.ALIGN_RIGHT);
+        paragraphTotal.add(new Chunk("Total: " + venda.calcularValorTotalCarrinho(), new Font(Font.COURIER, 20)));
+        this.documentoPdf.add(paragraphTotal);
     }
 
     @Override

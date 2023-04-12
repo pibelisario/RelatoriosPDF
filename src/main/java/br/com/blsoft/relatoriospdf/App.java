@@ -20,7 +20,7 @@ public class App {
         List<Produto> produtos = new ArrayList<>();
 
         Produto p1 = new Produto("Mouse", 2, 10.5);
-        Produto p2 = new Produto("Teclado", 3, 22.9);
+        Produto p2 = new Produto("Teclado", 3, 22);
 
         Venda venda = new Venda("Paulo Inácio", produtos);
 
